@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'tesfayeksu'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F6E3B75ED07641FC87EDD988972B3B43 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0A48EE02281A4FD8BB6C664F486BF3C8 }}
           package: .
