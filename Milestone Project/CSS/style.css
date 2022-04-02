@@ -1,0 +1,79 @@
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  white-space: pre-line;
+}
+
+.sidenav a {
+  overflow: hidden;
+  background-color: #333;
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  white-space: pre-line;
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+  height: 950px;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+  height: 950px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h1 {
+  text-align: center;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
