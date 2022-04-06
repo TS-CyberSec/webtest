@@ -2,15 +2,12 @@
 body {
   margin: 0;
 }
-
 /* Style the header */
 .header {
-
   color: black;
-  padding: 20px;
+  padding: 5px;
   text-align: center;
 }
-
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
@@ -25,8 +22,8 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   white-space: pre-line;
+  font-weight: bold;
 }
-
 .sidenav a {
   overflow: hidden;
   background-color: #333;
@@ -58,7 +55,7 @@ body {
 /* Middle column */
 .column.middle {
   width: 50%;
-  height: 950px;
+  height: 500px;
 }
 
 /*Clear floats after the columns */
@@ -76,4 +73,39 @@ h1 {
   background-color: #f1f1f1;
   padding: 10px;
   text-align: center;
+}
+
+.textwave {
+  position: relative;
+}
+.textwave span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: black;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+.midnav a {
+  overflow: hidden;
+  background-color: #333;
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  white-space: pre-line;
+}
+h2 {
+  text-align: center;
+  text-decoration: yellow;
+  color: brown;
 }
