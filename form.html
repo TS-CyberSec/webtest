@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Viewport" content="with=device-width, initial-scale = 1.0">
+    <title>Form for assistant positions</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="form_js.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class ="sidenav">
+        <a href="http://ccse.kennesaw.edu/it"><img src="Images/FPR_new Logo rotator.jpg" width="900" height="150"></a>
+    </div> 
+        
+    <div class="topnav">
+        <a href="form.html">FORM POSITION</a>
+        <a href="about.html">ABOUT</a>
+        <a href="directories.html">DIRECTORIES</a>
+        <a href="index.html">HOME</a>
+    
+    </div>
+<div class="row">
+    <div class="column side">  
+
+        <div class="sidenav"> 
+            <br>
+
+            <h2>Student Assistant Position</h2>
+        
+            <a href ="https://bagwell.kennesaw.edu/" >Bagwell College of Education</a>
+           <br>
+           <a href ="https://arts.kennesaw.edu/" >College of the Arts</a>
+           <br>
+           <a href ="https://coles.kennesaw.edu/" >coles of bussiness</a>
+           <br>
+           <a href ="https://cacm.kennesaw.edu/" >College of Computing and Software Engineering</a>
+           <br>
+           <a href ="https://cacm.kennesaw.edu/" >College of Professional Education</a>
+
+
+        </div>
+    </div>
+    <div class="column middle"> 
+        <div class="midnav"> 
+            <img src="Images/aboutksu-banner.jpg" width="500" height="100"></a>
+            <h1>Student Form</h1>
+
+    <div>
+            <fieldset style="width:600px">
+                <legend><b>Student Input Section:</b></legend> 
+                <select id="selector" onchange="classification(this);">
+                    <option value="select">__Select__</option>
+                    <option value="Fresh">Freshmen</option>
+                    <option value="Sphomore">Sphomore</option>
+                    <option value="Jnior">Jnior</option>
+                    <option value="Senior">Senior</option>
+                </select>
+               <br>
+               <br>
+    
+                <div id="Fresh_doc" style="display: none;">
+                <center>
+                    <table border="0">
+                      <h2>Please enter your grade for Freshmen courses</h2>
+                        <tr><td><label for="Fresh">MATH 116 : Pre-Calculus Math I </label> </td></tr>
+                        <tr><td><input type="text" id="Grade1" name="Grade1" required /><br /> </td></tr>
+                        <tr><td><label for="Fresh">CIS 105 : Principles of Computing </label> </td></tr>
+                        <tr><td><input type="text" id="Grade2" name="Grade2" required/><br /> </td></tr>
+                        <tr><td><label for="Fresh">Math 213: Calculus I </label>  </td></tr>
+                        <tr><td><input type="text" id="Grade3" name="Grade3" required /><br /> </td></tr>
+                    
+                    
+                    </table>
+                    <br>
+                    <br>
+                    <button onclick="getReport()">Evaluate</button>
+                </center>
+                </div>
+                <div id="Sphomore_doc" style="display: none;">
+                    <center>
+                        <table border="0">
+                          <h2>Please enter your grade for Sphomore courses</h2>
+                          <tr><td><label for="Sphomore">MAIH 251: Pre-Calculus Math II</label> </td></tr>
+                          <tr><td><input type="text" id="Grade11" name="Grade11" /><br /> </td></tr>
+                          <tr><td><label for="Sphomore"> CIS 121: Computer Science 1 </label> </td></tr>
+                          <tr><td><input type="text" id="Grade22" name="Grade22" /><br /> </td></tr>
+                          <tr><td><label for="Sphomore">ECON241: Principles of Macroeconomics</label> </td></tr>
+                          <tr><td><input type="text" id="Grade33" name="Grade33" /><br /></td></tr>
+                       
+                    </table>
+                    <br>
+                    <br>
+                    <button onclick="getReport1()">Evaluate</button>
+                </center>
+                </div>
+                <div id="Jnior_doc" style="display: none;">
+                    <center>
+                        <table border="0">
+                        <h2>Please enter your grade for Jnior courses</h2>
+                        <tr><td><label for="Jnior">ACCT 408 Internal Auditing</label> </td></tr>
+                        <tr><td><input type="text" id="Grade12" name="Grade12" /><br /></td></tr>
+                        <tr><td><label for="Jnior">CIS 121: Computer Science I</label> </td></tr>
+                        <tr><td><input type="text" id="Grade22" name="Grade22" /><br /> </td></tr>
+                        <tr><td><label for="Jnior">ENGL 222 World Literature</label> </td></tr>
+                        <tr><td><input type="text" id="Grade32" name="Grade32" /><br /></td></tr>
+                    
+                    </table>
+                    <br>
+                    <br>
+                    <button onclick="getReport2()">Evaluate</button>
+                </center>
+                </div>
+
+                <div id="Senior_doc" style="display: none;">
+                    <center>
+                        <table border="0">
+                        <h2>Please enter your grade for Senior courses</h2>
+                        <tr><td><label for="Senior">MAIH 251: Pre-Calculus Math II</label> </td></tr>
+                        <tr><td><input type="text" id="Grade13" name="Grade13" /><br /></td></tr>
+                        <tr><td><label for="Senior">CCYBR 291 Research</label> </td></tr>
+                        <tr><td><input type="text" id="Grade23" name="Grade23" /><br /> </td></tr>
+                        <tr><td><label for="Senior">IDES 240: Computer-Aided Design for Designers</label> </td></tr>
+                        <tr><td><input type="text" id="Grade33" name="Grade33" /><br /></td></tr>
+
+                       
+                    </table>
+                    <br>
+                    <br>
+                    <button onclick="getReport3()">Evaluate</button>
+                </center>
+            </fieldset>
+
+            <h2>Evaluation Result</h2>
+            
+            <table border="0">
+                <tr><td>Total Marks</td><td><input type="text" id="txtTotalMarks" readonly></td></tr>
+                <tr><td>Average Marks</td><td><input type="text" id="txtAvgMarks" readonly></td></tr>
+                <tr><td>Grade</td><td><input type="text" id="txtGrade" readonly></td></tr>
+                <tr><td>Remarks</td><td><input type="text" id="txtResult" readonly></td></tr>
+            </table> 
+
+        </div>
+
+ <a href="https://visit.kennesaw.edu/">Visit kennesaw.edu</a>
+            <br>
+            <p> Find your wings @ Kennesaw State University</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xmRmEi8nC4Y" frameborder="0" allowfullscreen></iframe>
+        </iframe>
+     </div>
+<div class="footer">
+    <div class ="sidenav">
+        <a href="https://kennesaw.view.usg.edu/d2l/home/2510919">CLASS PROJECT</a>
+        <p>Copyright 2022 ©-All rights are reserved</p>
+    </div>
+  </div>
+</body>
+</html>
