@@ -6,31 +6,20 @@ function classification(that)
         document.getElementById("Fresh_doc").style.display = "block";
 
     }
-    // else 
-    // {
-    //     document.getElementById("Fresh_doc").style.display = "none";
-    // }
+   
     else if (that.value == "Sphomore")
     {
         
         document.getElementById("Sphomore_doc").style.display = "block";
         
-        // document.getElementById('Fresh_doc').onchange = function() {
-        //     alert(this.value);}
     }
-    // else
-    // {
-    //     document.getElementById("Sphomore_doc").style.display = "none";
-    // }
+    
    else if (that.value == "Jnior")
     {
        
         document.getElementById("Jnior_doc").style.display = "block";
     }
-    // else
-    // {
-    //     document.getElementById("Jnior_doc").style.display = "none";
-    // }
+  
     else if (that.value == "Senior")
     {
         
