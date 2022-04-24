@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="Viewport" content="with=device-width, initial-scale = 1.0">
-    <title>Form for assistant positions</title>
+    <title>Internship positions</title>
     <link rel="stylesheet" href="CSS/style.css">
     <script src="form_js.js" defer></script>
 </head>
@@ -13,7 +13,7 @@
     </div> 
         
     <div class="topnav">
-        <a href="form.html">FORM POSITION</a>
+        <a href="form.html">INTERN POSITIONS</a>
         <a href="about.html">ABOUT</a>
         <a href="directories.html">DIRECTORIES</a>
         <a href="index.html">HOME</a>
@@ -26,28 +26,40 @@
             <br>
 
             <h2>Student Assistant Position</h2>
-        
-            <a href ="https://bagwell.kennesaw.edu/" >Bagwell College of Education</a>
+
+            <p>
+                
+                Are you interested in applying for our Social Media Internship program? 
+                We’d love to have you! This internship is held within the Marketing and 
+                Communication department here at Kennesaw state university.The Social Media 
+                Manager assistance is a crucial role when it comes to sharing content online 
+                ith followers and fans of KSU. The Kennesaw Social Media Manager assistance 
+                enlists students, like you, to assist with creating content, covering events, 
+                monitoring our channels, engaging with our followers, and perfecting the image 
+                and message about Kennesaw state university.We value creative, driven and committed 
+                students to fill this position, while also being well-rounded representatives of the 
+                KSU brand.We hire interns for the fall, spring, and summer semesters. Our internship
+                slots for the Summer are currently open. Applications for next semester’s internship 
+                will open soon. 
+                Please fill out the student form to view your eligibility for application, today!
+                Thank you.
+            
+            </p>
            <br>
-           <a href ="https://arts.kennesaw.edu/" >College of the Arts</a>
-           <br>
-           <a href ="https://coles.kennesaw.edu/" >coles of bussiness</a>
-           <br>
-           <a href ="https://cacm.kennesaw.edu/" >College of Computing and Software Engineering</a>
-           <br>
-           <a href ="https://cacm.kennesaw.edu/" >College of Professional Education</a>
+           <a href ="https://radow.kennesaw.edu/csj/" >Social Media</a>
 
 
         </div>
     </div>
     <div class="column middle"> 
         <div class="midnav"> 
-            <img src="Images/aboutksu-banner.jpg" width="500" height="100"></a>
-            <h1>Student Form</h1>
+            <img src="Images/Media.jpg" width="500" height="100"></a>
+            <h1>Postion Evaluation Form</h1>
 
     <div>
+        <center>
             <fieldset style="width:600px">
-                <legend><b>Student Input Section:</b></legend> 
+                <legend><b>Select student classification:</b></legend> 
                 <select id="selector" onchange="classification(this);">
                     <option value="select">__Select__</option>
                     <option value="Fresh">Freshmen</option>
@@ -59,7 +71,7 @@
                <br>
     
                 <div id="Fresh_doc" style="display: none;">
-                <center>
+                
                     <table border="0">
                       <h2>Please enter your grade for Freshmen courses</h2>
                         <tr><td><label for="Fresh">MATH 116 : Pre-Calculus Math I </label> </td></tr>
@@ -73,11 +85,11 @@
                     </table>
                     <br>
                     <br>
-                    <button onclick="getReport()">Evaluate</button>
-                </center>
+                    <button onclick="getReport(); refreshPage()">Evaluate</button>
+                
                 </div>
                 <div id="Sphomore_doc" style="display: none;">
-                    <center>
+                    
                         <table border="0">
                           <h2>Please enter your grade for Sphomore courses</h2>
                           <tr><td><label for="Sphomore">MAIH 251: Pre-Calculus Math II</label> </td></tr>
@@ -90,11 +102,11 @@
                     </table>
                     <br>
                     <br>
-                    <button onclick="getReport1()">Evaluate</button>
-                </center>
+                    <button onclick="getReport1();refreshPage()">Evaluate</button>
+                
                 </div>
                 <div id="Jnior_doc" style="display: none;">
-                    <center>
+                    
                         <table border="0">
                         <h2>Please enter your grade for Jnior courses</h2>
                         <tr><td><label for="Jnior">ACCT 408 Internal Auditing</label> </td></tr>
@@ -107,12 +119,12 @@
                     </table>
                     <br>
                     <br>
-                    <button onclick="getReport2()">Evaluate</button>
-                </center>
+                    <button onclick="getReport2();refreshPage()">Evaluate</button>
+                
                 </div>
 
                 <div id="Senior_doc" style="display: none;">
-                    <center>
+                    
                         <table border="0">
                         <h2>Please enter your grade for Senior courses</h2>
                         <tr><td><label for="Senior">MAIH 251: Pre-Calculus Math II</label> </td></tr>
@@ -126,27 +138,27 @@
                     </table>
                     <br>
                     <br>
-                    <button onclick="getReport3()">Evaluate</button>
-                </center>
+                    <button onclick="getReport3();refreshPage()">Evaluate</button>
+                
             </fieldset>
 
             <h2>Evaluation Result</h2>
             
             <table border="0">
-                <tr><td>Total Marks</td><td><input type="text" id="txtTotalMarks" readonly></td></tr>
-                <tr><td>Average Marks</td><td><input type="text" id="txtAvgMarks" readonly></td></tr>
-                <tr><td>Grade</td><td><input type="text" id="txtGrade" readonly></td></tr>
-                <tr><td>Remarks</td><td><input type="text" id="txtResult" readonly></td></tr>
+                <tr><td>Total Grade</td><td><input type="text" id="txtTotalMarks" readonly></td></tr>
+                <tr><td>Average Grade</td><td><input type="text" id="txtAvgMarks" readonly></td></tr>
+                <tr><td></td><td><input type="text" id="txtGrade" readonly></td></tr>
+                <tr><td><td><input type="text" id="txtResult" readonly></td></tr>
             </table> 
-
-        </div>
+        </center>
+        <!-- </div>
 
  <a href="https://visit.kennesaw.edu/">Visit kennesaw.edu</a>
             <br>
             <p> Find your wings @ Kennesaw State University</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xmRmEi8nC4Y" frameborder="0" allowfullscreen></iframe>
         </iframe>
-     </div>
+     </div> -->
 <div class="footer">
     <div class ="sidenav">
         <a href="https://kennesaw.view.usg.edu/d2l/home/2510919">CLASS PROJECT</a>
